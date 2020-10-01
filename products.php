@@ -1,5 +1,5 @@
 <?php
-	include_once('php/db_connection.php');
+	include_once('php/php_header_includes.php');
 ?>
 <!DOCTYPE html>
 <html lang="pt">

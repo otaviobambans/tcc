@@ -1,8 +1,9 @@
 <?php
-	session_start();
-	include_once('php/db_connection.php');
+	include_once('php/php_header_includes.php');
+	unset($_SESSION['admin_cad-page_status']);
 	if(isset($_SESSION['cd_client'])){
 		if($_SESSION['st_client_admin'] == 1){
+
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -29,14 +30,13 @@
 			<div class="row">
 				<div class="col-md-3"></div>
 				<div class="col-md-3">
-					<button class="btn btn-block btn-primary">Novo produto</button>
+					<a href="new_product.php" class="btn btn-block btn-primary">Novo produto</a>
 				</div>
 				<div class="col-md-3">
 					<button class="btn btn-block btn-primary">Nova categoria</button>
 				</div>
 				<div class="col-md-3"></div>
 			</div>
-			<?php include_once('php/new_product.php'); ?>
 			<br>
 			<div class="row">
 				<?php

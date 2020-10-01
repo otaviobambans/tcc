@@ -34,6 +34,9 @@
 					<a class="dropdown-item" href="client.php?status=client_data">Seus dados</a>
 					<a class="dropdown-item" href="client.php?status=client_favs">Favoritos</a>
 					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="edit_client.php">
+						<button class="btn btn-block btn-outline-warning">Editar</button>
+					</a>
 					<a class="dropdown-item" href="php/logout.php">
 						<button class="btn btn-block btn-outline-danger">Sair</button>
 					</a>

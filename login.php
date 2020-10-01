@@ -1,6 +1,5 @@
 <?php
-	session_start();
-	include_once('php/db_connection.php');
+	include_once('php/php_header_includes.php');
 	if(isset($_SESSION['cd_client'])){
 		header('location: index.php');
 	}
